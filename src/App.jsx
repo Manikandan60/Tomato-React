@@ -17,7 +17,7 @@ const App = () => {
       <div className='app'>
         <Navbar setShowlogin={setShowlogin}/>
         <Routes>
-          <Route path='/React-tomato/' element={<Home/>} />
+          <Route path='/Tomato-React/' element={<Home/>} />
           <Route path='/cart' element={<Cart/>} />
           <Route path='/order' element={<Placeorder/>} />
         </Routes>
