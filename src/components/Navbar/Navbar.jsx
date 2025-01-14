@@ -6,15 +6,15 @@ import { Storecontext } from '../../context/Storecontext'
 
 const Navbar = ({setShowlogin}) => {
  
-    const [menu,setMenu] = useState('menu')
+    const [menu,setMenu] = useState('home')
 
     const {gettotalcartamount} = useContext(Storecontext)
 
   return (
     <div className='navbar'>
-        <Link to='/'><img src={assets.logo} alt="" className="logo" /></Link>
+        <Link to='/React-tomato/'><img src={assets.logo} alt="" className="logo" /></Link>
         <ul className="navbar-menu">
-            <Link to="/" onClick={() => setMenu('home')}className={menu==='home'?'active':''}>home</Link>
+            <Link to="/React-tomato/" onClick={() => setMenu('home')}className={menu==='home'?'active':''}>home</Link>
             <a href='#explore-menu' onClick={() => setMenu('menu')}className={menu==='menu'?'active':''}>menu</a>
             <a href='#app-download' onClick={() => setMenu('mobile-app')}className={menu==='mobile-app'?'active':''}>mobile-app</a>
             <a href='#footer' onClick={() => setMenu('contact-us')}className={menu==='contact-us'?'active':''}>contact us</a>
