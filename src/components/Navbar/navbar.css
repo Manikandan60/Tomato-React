@@ -92,4 +92,7 @@
     .navbar-menu{
         display: none;
     }
+    .navbar .logo{
+        width: 180px;
+    }
 }
