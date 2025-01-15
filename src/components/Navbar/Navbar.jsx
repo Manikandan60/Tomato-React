@@ -12,7 +12,7 @@ const Navbar = ({setShowlogin}) => {
 
   return (
     <div className='navbar'>
-        <Link to='/Tomato-React/'><img src={assets.logo} alt="" className="logo" /></Link>
+        <Link to='/Tomato-React/'><h1 className='logo'> Foodio.</h1></Link>
         <ul className="navbar-menu">
             <Link to="/Tomato-React/" onClick={() => setMenu('home')}className={menu==='home'?'active':''}>home</Link>
             <a href='#explore-menu' onClick={() => setMenu('menu')}className={menu==='menu'?'active':''}>menu</a>
